@@ -1,3 +1,4 @@
+import 'package:calculadora_imc/views/calculate_view.dart';
 import 'package:flutter/material.dart';
 
 class MainView extends StatefulWidget {
@@ -23,36 +24,23 @@ class _MainViewState extends State<MainView> {
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
-            selectedIcon: Icon(Icons.home),
-            icon: Icon(Icons.home_outlined),
-            label: 'Home',
+            selectedIcon: Icon(Icons.calculate),
+            icon: Icon(Icons.calculate_outlined),
+            label: 'Calcular',
           ),
           NavigationDestination(
-            icon: Icon(Icons.business),
-            label: 'Business',
-          ),
-          NavigationDestination(
-            selectedIcon: Icon(Icons.school),
-            icon: Icon(Icons.school_outlined),
-            label: 'School',
+            selectedIcon: Icon(Icons.settings),
+            icon: Icon(Icons.settings_outlined),
+            label: 'Configurações',
           ),
         ],
       ),
       body: <Widget>[
-        Container(
-          color: Colors.red,
-          alignment: Alignment.center,
-          child: const Text('Page 1'),
-        ),
+        const CalculateView(),
         Container(
           color: Colors.green,
           alignment: Alignment.center,
           child: const Text('Page 2'),
-        ),
-        Container(
-          color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Text('Page 3'),
         ),
       ][currentPageIndex],
     );
