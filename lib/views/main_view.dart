@@ -1,4 +1,5 @@
 import 'package:calculadora_imc/views/calculate_view.dart';
+import 'package:calculadora_imc/views/configuration_view.dart';
 import 'package:flutter/material.dart';
 
 class MainView extends StatefulWidget {
@@ -37,11 +38,7 @@ class _MainViewState extends State<MainView> {
       ),
       body: <Widget>[
         const CalculateView(),
-        Container(
-          color: Colors.green,
-          alignment: Alignment.center,
-          child: const Text('Page 2'),
-        ),
+        const ConfigurationView(),
       ][currentPageIndex],
     );
   }
