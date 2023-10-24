@@ -1,16 +1,8 @@
-# calculadora_imc
+# Checklist do Desafio
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Criar classe IMC (Peso / Altura)​ :white_check_mark:
+- Altura ler em tela de Configurações​ :x:
+- Ler dados no app​ :x:
+- Calcular IMC ​:x:
+- Gravar dados no Hive ou SQLite​ :x:
+- Exibir em uma lista​ :x:
