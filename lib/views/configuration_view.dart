@@ -1,3 +1,5 @@
+import 'package:calculadora_imc/widgets/custom_safe_area.dart';
+import 'package:calculadora_imc/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class ConfigurationView extends StatefulWidget {
@@ -10,6 +12,12 @@ class ConfigurationView extends StatefulWidget {
 class _ConfigurationViewState extends State<ConfigurationView> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const CustomSafeArea(
+      widgets: [
+        CustomTextField(
+          text: "Altura",
+        )
+      ],
+    );
   }
 }
